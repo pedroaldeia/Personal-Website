@@ -9,6 +9,7 @@
             --color-text: rgb(31, 36, 41);
             --color-text-light: rgb(128, 118, 106);
             --color-hypertext: green;
+            --color-hypertext-dark: rgb(1, 62, 1);
             --font-size-small: 15px;
         }
         
@@ -83,6 +84,20 @@
 
         a {
             color: var(--color-hypertext);
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: var(--color-hypertext-dark);
+        }
+
+        a:visited {
+            color: var(--color-hypertext-dark);
+        }
+
+        a:visited:hover {
+            text-decoration: none;
+            color: var(--color-hypertext-dark);
         }
 
     </style>

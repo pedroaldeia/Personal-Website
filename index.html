@@ -19,6 +19,23 @@
             gap: 30px;
         }
 
+        header .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header .row .row {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        header .button {
+            padding: 0 0;
+            margin: 0 0;
+        }
+
         body {
             margin: 0 0;
             padding: 0 200px;
@@ -31,8 +48,10 @@
         header {
             position: sticky;
             top: 0px;
+            margin-top: 30px;
             margin-left: -200px;
             margin-right: -200px;
+            margin-bottom: 30px;
             outline: 10px solid var(--color-secondary);
             padding: 0 200px;
             background-color: var(--color-accent);
@@ -42,7 +61,7 @@
         footer p {
             color: var(--color-text-light);
             font-size: var(--font-size-small);
-            margin-top: 55px;
+            margin-top: 35px;
             margin-bottom: 5px;
             padding: 0px 0px;
             text-align: center;
@@ -60,7 +79,7 @@
         }
 
         h1 {
-            padding: 20px 15px;
+            padding: 0px 0px;
         }
 
         h2:first-child {
@@ -129,9 +148,18 @@
 </head>
 <body>
     <header>
-        <h1>
-            Pedro Aldeia
-        </h1>
+        <div class="row">
+            <h1>
+                Pedro Aldeia
+            </h1>
+            <div class="button-group">
+                <div class="row">
+                    <a href="https://web.tecnico.ulisboa.pt/pedroaldeia/" class="button">Curriculum</a>
+                    <a href="https://web.tecnico.ulisboa.pt/pedroaldeia/" class="button">Curriculum</a>
+                    <a href="https://web.tecnico.ulisboa.pt/pedroaldeia/" class="button">Curriculum</a>
+                </div>
+            </div>
+        </div>
     </header>
     <div class="row">
         <img src="profile-picture.jpeg" alt="This is me!" width="600">

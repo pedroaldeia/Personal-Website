@@ -62,5 +62,19 @@
         <a href="https://www.linkedin.com/in/pedro-aldeia/" target="_blank">Linked-In</a> |
         <a href="https://orcid.org/0009-0007-3783-6329" target="_blank">ORCID</a>
     </p>
+    <footer>
+        <p>
+            Last Modified: <span id="last_updated"></span>
+        </p>
+    </footer>
+
+    <script>
+        const date = new Date(document.lastModified);
+        const formatted = date.toLocalDateString("en-GB", {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+        })
+    </script>
 </body>
 </html>

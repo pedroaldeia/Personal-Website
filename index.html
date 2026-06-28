@@ -7,7 +7,15 @@
             --color-secondary: cornsilk;
             --color-accent: rgb(212, 196, 176);
             --color-text: rgb(31, 36, 41);
+            --color-text-light: rgb(110, 125, 139);
             --color-hypertext: green;
+            --font-size-small: 15px;
+        }
+        
+        .row {
+            display: flex;
+            align-items: center;
+            gap: 30px;
         }
 
         body {
@@ -20,15 +28,28 @@
         }
         
         header {
+            position: sticky;
+            top: 0;
             margin-left: -200px;
             margin-right: -200px;
             padding: 0 200px;
             background-color: var(--color-accent);
             color: var(--color-primary);
         }
-        
+
+        footer p {
+            color: var(--color-text-light);
+            font-size: var(--font-size-small);
+            margin-top: 55px;
+            margin-bottom: 5px;
+            padding: 0px 0px;
+            text-align: center;
+        }
+
         img {
             max-width: 100%;
+            margin: 30px 10px;
+            margin-right: 20px;
             outline: 10px solid var(--color-primary);
         }
 
@@ -36,16 +57,34 @@
             padding: 0px 0px;
         }
 
+        h1 {
+            padding: 20px 15px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        h2:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        h3:first-child {
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        h3:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
 
         a {
             color: var(--color-hypertext);
         }
 
-        .row {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-        }
     </style>
 
     <!-- cena que já estavam aqui INICIO-->
@@ -81,13 +120,13 @@
     <div class="row">
         <img src="profile-picture.jpeg" alt="This is me!" width="600">
         <div class="text">
-            <h4>Hello! I'm Pedro Aldeia.</h4>
+            <h3>Hello! I'm Pedro Aldeia.</h3>
             <p>
                 I'm 21 years old and portuguese, based in Lisbon.<br>
                 Currently studying at Instituto Superior Técnico.
             </p>
-            <p>This is my webpage, make yourself at home.</p>
-            <h4>Reach me!</h4>
+            <p>This is my webpage, make yourself at home :)</p>
+            <h3>Reach me!</h3>
             <p>
                 <b>E-mail:</b> psaldeia@gmail.com | pedroaldeia@tecnico.ulisboa.pt<br>
                 <a href="https://github.com/pedroaldeia" target="_blank">GitHub</a> |
@@ -100,7 +139,7 @@
         Recent Works
     </h2>
     <p>
-        - Batchelor's Degree in CSE at IST<br>
+        - Batchelor's Degree in CSE @ IST<br>
         - Developing WebCap (private for now)<br>
         - This webpage
     </p>

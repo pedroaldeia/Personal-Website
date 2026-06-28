@@ -2,17 +2,48 @@
 <html>
 <head>
     <style>
+        :root {
+            --color-primary: darkslateblue;
+            --color-secondary: cornsilk;
+            --color-accent: rgb(212, 196, 176);
+            --color-text: rgb(31, 36, 41);
+            --color-hypertext: green;
+        }
+
         img {
             max-width: 100%;
+            outline: 10px solid var(--color-primary);
         }
 
         body {
+            margin: 0 0;
+            padding: 0 200px;
             overflow-y: auto;
             font: 1.2em / 1.5 system-ui;
+            color: var(--color-text);
+            background-color: var(--color-secondary);
+        }
+
+        p {
+            padding: 0px 0px;
+        }
+
+        header {
+            margin-left: -200px;
+            margin-right: -200px;
+            padding: 0 200px;
+            background-color: var(--color-accent);
+            color: var(--color-primary);
         }
 
         a {
-            color: green;
+            color: var(--color-hypertext);
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            gap: 30px;
         }
     </style>
 
@@ -41,26 +72,31 @@
 
 </head>
 <body>
-    <h1>
-        Pedro Aldeia
-    </h1>
-    <img src="profile-picture.jpeg" alt="This is me!" width="600">
-    <h4>
-        <p>Hello! I'm Pedro Aldeia.</p>
-        <p>This is my webpage, make yourself at home.</p>
-    </h4>
+    <header>
+        <h1>
+            Pedro Aldeia
+        </h1>
+    </header>
+    <div class="row">
+        <img src="profile-picture.jpeg" alt="This is me!" width="600">
+        <div class="text">
+            <h4>Hello! I'm Pedro Aldeia.</h4>
+            <p>This is my webpage, make yourself at home.</p>
+        </div>
+    </div>
     <h2>
         Recent Works
     </h2>
-    <p>- Batchelor's Degree in CSE at IST</p>
-    <p>- Developing WebCap (private for now)</p>
-    <p>- This webpage</p>
+    <p>
+        - Batchelor's Degree in CSE at IST<br>
+        - Developing WebCap (private for now)<br>
+        - This webpage
+    </p>
     <h2>
         Reach me!
     </h2>
-    <p>Personal E-mail: psaldeia@gmail.com</p>
-    <p>Institutional E-mail: pedroaldeia@tecnico.ulisboa.pt</p>
     <p>
+        <b>E-mail:</b> psaldeia@gmail.com | pedroaldeia@tecnico.ulisboa.pt<br>
         <a href="https://github.com/pedroaldeia" target="_blank">GitHub</a> |
         <a href="https://www.linkedin.com/in/pedro-aldeia/" target="_blank">Linked-In</a> |
         <a href="https://orcid.org/0009-0007-3783-6329" target="_blank">ORCID</a>

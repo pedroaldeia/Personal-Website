@@ -70,11 +70,12 @@
 
     <script>
         const date = new Date(document.lastModified);
-        const formatted = date.toLocalDateString("en-GB", {
+        const formatted = date.toLocaleDateString("en-GB", {
             day: "numeric",
             month: "long",
             year: "numeric",
         })
+        document.getElementById("last_updated").textContent = formatted;
     </script>
 </body>
 </html>

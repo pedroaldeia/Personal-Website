@@ -1,11 +1,11 @@
 // load header
-fetch("header.html")
+fetch("fragments/header.html")
     .then(res => res.text())
     .then(html => document.getElementById("header").innerHTML = html)
 
 
 // load footer
-fetch("footer.html")
+fetch("fragments/footer.html")
     .then(res => res.text())
     .then(
         html => {

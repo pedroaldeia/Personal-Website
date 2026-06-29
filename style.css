@@ -1,0 +1,136 @@
+
+:root {
+    --color-primary: darkslateblue;
+    --color-secondary: cornsilk;
+    --color-accent: rgb(212, 196, 176);
+    --color-text: rgb(31, 36, 41);
+    --color-text-light: rgb(128, 118, 106);
+    --color-hypertext: green;
+    --color-hypertext-dark: rgb(1, 62, 1);
+    --font-size-small: 15px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .row .row {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+header .row .button {
+    padding: 10px 10px;
+    margin: 0 0;
+    border-radius: 30px;
+    box-shadow: 0 0 0 5px var(--color-primary);
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+header .row .button:hover{
+    padding: 10px 10px;
+    margin: 0 0;
+    border-radius: 30px;
+    box-shadow: 0 0 0 5px var(--color-primary);
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+body {
+    margin: 0 0;
+    padding: 0 200px;
+    overflow-y: auto;
+    font: 1.2em / 1.5 system-ui;
+    color: var(--color-text);
+    background-color: var(--color-secondary);
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    margin-top: 30px;
+    margin-left: -200px;
+    margin-right: -200px;
+    margin-bottom: 30px;
+    outline: 10px solid var(--color-secondary);
+    padding: 0 200px;
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+}
+
+footer p {
+    color: var(--color-text-light);
+    font-size: var(--font-size-small);
+    margin-top: 35px;
+    margin-bottom: 5px;
+    padding: 0px 0px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    margin: 30px 10px;
+    margin-right: 20px;
+    outline: 10px solid var(--color-primary);
+}
+
+p {
+    padding: 0px 0px;
+}
+
+h1 {
+    padding: 0px 0px;
+}
+
+h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h2:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h3:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h3:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+a {
+    color: var(--color-hypertext);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--color-hypertext-dark);
+}
+
+a:visited {
+    color: var(--color-hypertext-dark);
+}
+
+a:visited:hover {
+    text-decoration: none;
+    color: var(--color-hypertext-dark);
+}

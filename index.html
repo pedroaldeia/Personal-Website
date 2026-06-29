@@ -56,27 +56,6 @@
     
     <div id="footer"></div>
 
-    <script>
-        fetch("header.html")
-            .then(res => res.text())
-            .then(html => document.getElementById("header").innerHTML = html)
-    </script>
-
-    <script>
-        fetch("footer.html")
-            .then(res => res.text())
-            .then(
-                html => {
-                document.getElementById("footer").innerHTML = html;
-
-                const date = new Date(document.lastModified);
-                const formatted = date.toLocaleDateString("en-GB", {
-                    day: "numeric",
-                    month: "long",
-                    year: "numeric",
-                });
-                document.getElementById("last_updated").textContent = formatted;
-            });
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>

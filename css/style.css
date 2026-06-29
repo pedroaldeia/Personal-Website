@@ -51,6 +51,19 @@ header .row .button:hover{
     font-size: 1.2rem;
 }
 
+header .row .homeButton {
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 3rem;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+header .row .homeButton:hover {
+    color: var(--color-primary);
+}
+
 body {
     margin: 0 0;
     padding: 0 200px;

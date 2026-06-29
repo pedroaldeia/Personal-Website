@@ -19,3 +19,6 @@ fetch("fragments/footer.html")
         });
         document.getElementById("last_updated").textContent = formatted;
     });
+
+// load wip ascii art
+

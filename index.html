@@ -27,7 +27,7 @@
 </head>
 <body>
     <div id="header"></div>
-    
+
     <div class="row">
         <img src="profile-picture.jpeg" alt="This is me!" width="600">
         <div class="text">
@@ -53,26 +53,30 @@
         - Batchelor's Degree in CSE @ IST<br>
         - Investigation @ INESC-ID<br>
     </p>
-    <footer>
-        <p>
-            Last Modified: <span id="last_updated"></span>
-        </p>
-    </footer>
-
-    <script>
-        const date = new Date(document.lastModified);
-        const formatted = date.toLocaleDateString("en-GB", {
-            day: "numeric",
-            month: "long",
-            year: "numeric",
-        })
-        document.getElementById("last_updated").textContent = formatted;
-    </script>
+    
+    <div id="footer"></div>
 
     <script>
         fetch("header.html")
             .then(res => res.text())
             .then(html => document.getElementById("header").innerHTML = html)
+    </script>
+
+    <script>
+        fetch("footer.html")
+            .then(res => res.text())
+            .then(
+                html => {
+                document.getElementById("footer").innerHTML = html;
+
+                const date = new Date(document.lastModified);
+                const formatted = date.toLocaleDateString("en-GB", {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                });
+                document.getElementById("last_updated").textContent = formatted;
+            });
     </script>
 </body>
 </html>

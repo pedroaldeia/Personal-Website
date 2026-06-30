@@ -146,15 +146,6 @@ a:hover {
     color: var(--color-hypertext-dark);
 }
 
-a:visited {
-    color: var(--color-hypertext-dark);
-}
-
-a:visited:hover {
-    text-decoration: none;
-    color: var(--color-hypertext-dark);
-}
-
 .message {
     color: var(--color-primary);
     font-weight: bold;

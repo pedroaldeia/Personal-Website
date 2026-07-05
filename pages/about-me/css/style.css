@@ -1,0 +1,24 @@
+.about-me-text h1 {
+    color: var(--color-primary);
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0px;
+    padding: 0px;
+}
+
+.about-me-text h2 {
+    color: var(--color-primary);
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin: 25px 0px;
+    padding: 0px;
+}
+
+.about-me-text li {
+    color: var(--color-primary);
+    font-weight: bold;
+    margin: 0px 0px;
+    padding: 0px;
+}

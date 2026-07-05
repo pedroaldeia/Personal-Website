@@ -1,7 +1,7 @@
 .curriculum-page {
     border-radius: 30px;
     box-shadow: 0 0 0 5px var(--color-primary);
-    background-color: var(--color-background-light);
+    background-color: var(--color-background-light) !important;
     padding: 40px;
     max-width: 900px;
     margin: 40px auto;

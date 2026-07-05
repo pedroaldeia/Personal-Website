@@ -23,6 +23,11 @@
     margin-left: 25px;
 }
 
+.curriculum-page ul {
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
 .curriculum-page .top h1 {
     margin-top: 0;
 }

@@ -75,7 +75,7 @@ body {
     flex-direction: column;
     margin: 0 0;
     overflow-y: auto;
-    font: 1.2em / 1.5 system-ui;
+    font: 1.2rem / 1.5 system-ui;
     color: var(--color-text);
     background-color: var(--color-secondary);
 }

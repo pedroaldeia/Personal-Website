@@ -18,13 +18,17 @@
 }
 
 header .row {
-    display: flex;
+    max-width: 60rem;
+    margin: 2rem auto;
+    padding: 0 0rem;
+    display: flex; 
     align-items: center;
     justify-content: space-between;
 }
 
 header .row .row {
     display: flex;
+    margin: 0 0;
     align-items: center;
     gap: 3.1rem;
 }
@@ -70,7 +74,6 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 0;
-    padding: 0 10rem;
     overflow-y: auto;
     font: 1.2em / 1.5 system-ui;
     color: var(--color-text);
@@ -79,20 +82,20 @@ body {
 
 .content {
   flex: 1;
+  max-width: 68rem;       /* caps width on large screens */
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  width: 100%;
 }
 
 header {
     position: sticky;
-    top: 0px;
-    margin-top: 1.9rem;
-    margin-left: -10rem;
-    margin-right: -10rem;
-    margin-bottom: 1.9rem;
+    top: 0;
     outline: 0.625rem solid var(--color-secondary);
-    padding: 0 12.5rem;
     background-color: var(--color-accent);
     color: var(--color-primary);
 }
+
 
 footer p {
     color: var(--color-text-light);
@@ -169,8 +172,4 @@ a:hover {
     text-decoration: none;
     margin-top: 3.75rem;
     margin-bottom: 0;
-}
-
-.content {
-    margin: 0 0;
 }

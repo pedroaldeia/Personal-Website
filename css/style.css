@@ -107,11 +107,10 @@ footer p {
 }
 
 img {
-    max-width: 30rem;
-    margin: 1.9rem 0.625rem;
-    margin-right: 1.25rem;
-    outline: 0.625rem solid var(--color-primary);
+    max-width: var(--image-width, 30rem);
     height: auto;
+    margin: 1.9rem 0.625rem;
+    outline: 0.625rem solid var(--color-primary);
 }
 
 p {

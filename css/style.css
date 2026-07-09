@@ -24,7 +24,6 @@
 header {
     position: sticky;
     top: 0;
-    outline: 0.625rem solid var(--color-secondary);
     background-color: var(--color-accent);
     color: var(--color-primary);
     margin: 2rem 0;
@@ -32,6 +31,7 @@ header {
 
 #header {
     display: contents;
+    padding: 0 0;
 }
 
 header .row {

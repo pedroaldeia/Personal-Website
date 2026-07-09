@@ -53,4 +53,10 @@
     margin: 0 0;
 }
 
+@media (max-width: 500px) {
+    .curriculum-page {
+        margin: 1rem;
+        padding: 2rem;
+    }
+}
 

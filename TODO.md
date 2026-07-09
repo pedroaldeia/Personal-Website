@@ -1,6 +1,8 @@
 
 ### TODO
-1- add curriculum page title, meaning switching h1 to h2
-2- fix header moving along scroll down
-3- create secret
-4- create games
+- fix header moving along scroll down
+- maybe adicionar linhas separadoras do header
+- meter bolinhas de lado no coiso principal
+- meter linha wobly no header
+- create secret
+- create games

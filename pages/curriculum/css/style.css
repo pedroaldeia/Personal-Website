@@ -8,14 +8,19 @@
 }
 
 .curriculum-page h1 {
-    font-size: 2.19rem;
+    font-size: 2.5rem;
 }
 
 .curriculum-page h2 {
-    font-size: 1.25rem;
+    font-size: 2rem;
+    margin-top: 1rem;
 }
 
 .curriculum-page h3 {
+    font-size: 1.25rem;
+}
+
+.curriculum-page h4 {
     font-size: 1.23rem;
 }
 
@@ -28,7 +33,7 @@
     margin: 0 0;
 }
 
-.curriculum-page .top h1 {
+.curriculum-page .top h2 {
     margin-top: 0;
 }
 

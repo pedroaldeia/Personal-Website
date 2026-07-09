@@ -22,3 +22,33 @@
     margin: 0 0;
     padding: 0;
 }
+
+@media (max-width: 500px) {
+    .row img {
+        order: 1;
+        margin-top: 5rem;
+    }
+    
+    .row .text {
+        order: 2;
+    }
+
+    .about-me-page h1 {
+        color: var(--color-primary);
+        font-size: 3rem;
+        text-align: center;
+        font-weight: bold;
+        margin: 1.25rem 0;
+        margin-bottom: -1.5rem;
+        padding: 0;
+    }
+
+    .about-me-page h2 {
+        color: var(--color-primary);
+        font-size: 2rem;
+        text-align: center;
+        font-weight: bold;
+        margin: 1rem 0;
+        padding: 0;
+    }
+}

@@ -178,47 +178,47 @@ a:hover {
 }
 
 @media (max-width: 500px) {
-  header .row .homeButton {
+    header .row .homeButton {
     font-size: 1.8rem;
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
-  }
+    }
 
-  header .row .button {
+    header .row .button {
     font-size: 0.9rem;
     padding: 0.4rem 0.5rem;
-  }
+    }
 
-  header .row .button:hover {
+    header .row .button:hover {
     font-size: 0.9rem;
     padding: 0.4rem 0.5rem;
-  }
+    }
 
-  header .row .row {
+    header .row .row {
     gap: 1rem;
-  }
+    }
 
-  header .row {
+    header .row {
     padding: 0.5rem 0;
-  }
+    }
 
-  .row {
+    .row {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
-  }
+    }
 
-  header .row .row {
+    header .row .row {
     flex-direction: row;
     display: flex;
     margin: 0 0;
     align-items: center;
     gap: 2rem;
-  }
+    }
 
-  .row img {
-    width: 100%;
-    max-width: 100%;
-    margin: 0.5rem 0;
-  }
+    .row img {
+        width: 100%;
+        max-width: 100%;
+        margin: 0.5rem 0;
+    }
 }

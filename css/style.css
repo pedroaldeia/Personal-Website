@@ -27,6 +27,9 @@ header {
     background-color: var(--color-accent);
     color: var(--color-primary);
     margin: 2rem 0;
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    z-index: 1;
 }
 
 #header {
@@ -174,6 +177,17 @@ a:hover {
     text-decoration: none;
     margin-top: 2.81rem;
     margin-bottom: 2.81rem;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 100%;
+    transform: translateY(-50%);
+    z-index: 2;
+    pointer-events: none;
 }
 
 #ascii_art {

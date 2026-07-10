@@ -5,6 +5,41 @@ function resolveSiteHref(path) {
     return new URL(path.replace(/^\//, ""), siteRootUrl).href;
 }
 
+// wave look header
+function drawWave() {
+    const canvas = document.getElementById("wave");
+    const dpr = window.devicePixelRatio || 1;
+
+    const displayWidth = window.innerWidth;
+    const displayHeight = window.innerHeight / 16;
+
+    canvas.width = displayWidth * dpr;
+    canvas.height = displayHeight * dpr;
+
+    canvas.style.width = displayWidth + "px";
+    canvas.style.height = displayHeight + "px";
+
+
+    const ctx = canvas.getContext("2d");
+    ctx.scale(dpr, dpr);
+    
+    let amplitude = 20;
+    let wavelength = 200;
+    let offset = displayHeight / 2;
+    let phase = 0;
+    let width = 5;
+    
+    
+    ctx.beginPath();
+    ctx.lineWidth = 4;
+    for (let x = 0; x <= displayWidth; x++) {
+        let y = amplitude * Math.sin((x + phase) * 2 * Math.PI / wavelength) + offset;
+        x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.strokeStyle = "darkslateblue"
+    ctx.stroke();
+}
+
 // load header
 const headerContainer = document.getElementById("header");
 if (headerContainer) {
@@ -18,6 +53,7 @@ if (headerContainer) {
                     link.href = resolveSiteHref(href);
                 }
             });
+            drawWave();
         });
 }
 
@@ -44,5 +80,4 @@ if (footerContainer) {
         });
 }
 
-// load wip ascii art
 

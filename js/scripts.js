@@ -10,7 +10,7 @@ function drawWave() {
     const canvas = document.getElementById("wave");
     const dpr = window.devicePixelRatio || 1;
 
-    const displayWidth = window.innerWidth;
+    const displayWidth = document.documentElement.clientWidth;
     const displayHeight = window.innerHeight / 16;
 
     canvas.width = displayWidth * dpr;
@@ -54,6 +54,7 @@ if (headerContainer) {
                 }
             });
             drawWave();
+            window.addEventListener("resize", drawWave);
         });
 }
 

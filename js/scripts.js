@@ -6,8 +6,7 @@ function resolveSiteHref(path) {
 }
 
 // wave look header
-function drawWave() {
-    const canvas = document.getElementById("wave");
+function drawWave(canvas, isTop) {
     const dpr = window.devicePixelRatio || 1;
 
     const displayWidth = document.documentElement.clientWidth;
@@ -19,7 +18,6 @@ function drawWave() {
     canvas.style.width = displayWidth + "px";
     canvas.style.height = displayHeight + "px";
 
-
     const ctx = canvas.getContext("2d");
     ctx.scale(dpr, dpr);
     
@@ -30,14 +28,40 @@ function drawWave() {
     let width = 5;
     
     
-    ctx.beginPath();
     ctx.lineWidth = 4;
+    const points = []
     for (let x = 0; x <= displayWidth; x++) {
         let y = amplitude * Math.sin((x + phase) * 2 * Math.PI / wavelength) + offset;
-        x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+        points.push([x,y]);
     }
+
+    if (isTop) {
+        ctx.beginPath();
+        points.forEach(([x, y], i) => {
+            i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+        })
+        ctx.lineTo(displayWidth, 0);
+        ctx.lineTo(0, 0);
+        ctx.closePath();
+        ctx.fillStyle = "darkslateblue";
+        ctx.fill();
+    }
+    
+    ctx.beginPath();
+    points.forEach(([x, y], i) => {
+        i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    })
     ctx.strokeStyle = "darkslateblue"
     ctx.stroke();
+}
+
+function drawWaves() {
+    const canvasList = document.getElementsByClassName("wave");
+    let isTop;
+    const canvasArray = Array.from(canvasList).forEach((canvas, index) => {
+        isTop = index === 0;
+        drawWave(canvas, isTop);
+    });
 }
 
 // load header
@@ -53,8 +77,8 @@ if (headerContainer) {
                     link.href = resolveSiteHref(href);
                 }
             });
-            drawWave();
-            window.addEventListener("resize", drawWave);
+            drawWaves();
+            window.addEventListener("resize", drawWaves);
         });
 }
 

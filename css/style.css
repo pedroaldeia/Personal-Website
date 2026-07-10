@@ -23,12 +23,11 @@
 
 header {
     position: sticky;
-    top: 0;
-    background-color: var(--color-accent);
+    top: 1.5rem;
     color: var(--color-primary);
-    margin: 2rem 0;
+    margin: 1.5rem 0;
     margin-bottom: 4rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
     z-index: 1;
 }
 
@@ -188,6 +187,16 @@ canvas {
     transform: translateY(-50%);
     z-index: 2;
     pointer-events: none;
+}
+
+canvas.wave:first-of-type {
+    top: 0%;
+    transform: translateY(-50%);
+}
+
+canvas.wave:last-of-type {
+    top: 100%;
+    transform: translateY(-50%);
 }
 
 #ascii_art {

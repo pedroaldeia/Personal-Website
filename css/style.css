@@ -95,6 +95,7 @@ body {
     margin: 0 0;
     font: 1.2rem / 1.5 system-ui;
     color: var(--color-text);
+    overflow-x: hidden;
     background-color: var(--color-secondary);
 }
 
@@ -109,7 +110,7 @@ body {
 footer p {
     color: var(--color-text-light);
     font-size: var(--font-size-small);
-    margin-top: 2.19rem;
+    margin-top: 1.5rem;
     margin-bottom: 0.31rem;
     padding: 0 0;
     text-align: center;

@@ -130,6 +130,16 @@ img {
 
 p {
     padding: 0 0;
+    font-size: 1.15rem;
+}
+
+ul {
+    margin-bottom: 0;
+    margin-top: 0.6rem;
+}
+
+li {
+    font-size: 1.15rem;
 }
 
 h1 {

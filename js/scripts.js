@@ -35,15 +35,25 @@ function drawWave(canvas, isTop) {
         points.push([x,y]);
     }
 
+    ctx.beginPath();
+    points.forEach(([x, y], i) => {
+        i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    })
+    ctx.lineTo(displayWidth, 0);
+    ctx.lineTo(0, 0);
+    ctx.closePath();
+    ctx.fillStyle = isTop ? "darkslateblue" : "cornsilk";
+    ctx.fill();
+
     if (isTop) {
         ctx.beginPath();
         points.forEach(([x, y], i) => {
             i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
         })
-        ctx.lineTo(displayWidth, 0);
-        ctx.lineTo(0, 0);
+        ctx.lineTo(displayWidth, displayHeight);
+        ctx.lineTo(0, displayHeight);
         ctx.closePath();
-        ctx.fillStyle = "darkslateblue";
+        ctx.fillStyle = "cornsilk";
         ctx.fill();
     }
     

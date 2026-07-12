@@ -22,18 +22,21 @@
 }
 
 header {
-    position: sticky;
-    top: 0;
+    background-color: var(--color-secondary);
     color: var(--color-primary);
-    margin: 1.5rem 0;
-    margin-bottom: 4rem;
-    padding: 2rem;
+    padding: 0.5rem;
     z-index: 1;
 }
 
 #header {
     display: contents;
     padding: 0 0;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    margin-bottom: 2rem;
 }
 
 header .row {
@@ -181,23 +184,11 @@ a:hover {
 
 canvas {
     display: block;
-    position: absolute;
     left: 0;
     width: 100%;
     top: 100%;
-    transform: translateY(-50%);
     z-index: 2;
     pointer-events: none;
-}
-
-canvas.wave:first-of-type {
-    top: 0%;
-    transform: translateY(-50%);
-}
-
-canvas.wave:last-of-type {
-    top: 100%;
-    transform: translateY(-50%);
 }
 
 #ascii_art {
